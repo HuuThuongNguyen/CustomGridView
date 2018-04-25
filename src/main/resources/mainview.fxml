@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets ?>
+<?import com.huuthuong.jfx8.gui.helpers.CustomGridView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<GridPane hgap="5" vgap="5" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints prefHeight="36.0" vgrow="NEVER" />
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="30.0" vgrow="ALWAYS" />
+    </rowConstraints>
+    <children>
+        <TextField fx:id="txSearch" >
+            <GridPane.margin>
+                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+            </GridPane.margin>
+        </TextField>
+        <AnchorPane GridPane.rowIndex="1">
+            <children>
+                <CustomGridView fx:id="cgvPersons" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"/>
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@css/default.css" />
+    </stylesheets>
+</GridPane>
